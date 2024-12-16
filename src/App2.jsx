@@ -17,9 +17,11 @@ export default function App() {
         */
         setCount(prevCount=> prevCount-1)
     }
+    /*---we use in inside of html
     function inc(){
         setCount(count+1)
     }
+    */
     function reset(){
         setCount(count=0)
     }
@@ -29,7 +31,7 @@ export default function App() {
             <div className="counter">
                 <button onClick={dec} className="minus" aria-label="Decrease count">–</button>
                 <h2 className="count">{count}</h2>
-                <button onClick={inc} className="plus" aria-label="Increase count">+</button>
+                <button onClick={()=>setCount(prevCount=>prevCount+1)} className="plus" aria-label="Increase count">+</button>
                 {/* this is try code */}
                 </div>
             <button onClick={reset} className="reset">reset</button>
