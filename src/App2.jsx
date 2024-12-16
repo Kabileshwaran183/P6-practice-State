@@ -1,7 +1,6 @@
 import React from "react"
 import './index2.css'
 export default function App() {
-
     let[count,setCount] = React.useState(0)
     function dec(){
         /* 
@@ -25,6 +24,13 @@ export default function App() {
     function reset(){
         setCount(count=0)
     }
+
+    const [isGoingOut, setIsGoingOut] = React.useState(false)
+    
+    function changeMind() {
+        setIsGoingOut(prev => !prev)
+    }
+
     return (
         <main className="container">
             <h1>State Practice</h1>
@@ -35,7 +41,13 @@ export default function App() {
                 {/* this is try code */}
                 </div>
             <button onClick={reset} className="reset">reset</button>
-            
+        <br /><br /><br />
+            <h1 className="title">Do I feel like going out tonight?</h1>
+            <button
+                onClick={changeMind}
+                className="value"
+                aria-label={`Current answer is ${isGoingOut ? "Yes" : "No"}. Click to change it.`}
+            >{isGoingOut ? "Yes" : "No"}</button>
         </main>
     )
 }
