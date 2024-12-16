@@ -1,5 +1,5 @@
 import React from "react"
-import './index2.css'
+import './state.css'
 export default function App() {
     let[count,setCount] = React.useState(0)
     function dec(){
