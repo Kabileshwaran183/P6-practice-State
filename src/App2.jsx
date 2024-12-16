@@ -4,7 +4,18 @@ export default function App() {
 
     let[count,setCount] = React.useState(0)
     function dec(){
-        setCount(count-1)
+        /* 
+        1.  setCount(count-1)
+                    |
+        2.  setCount(function(){
+                return count-1
+            })
+                    |
+        3.  setCount(function(prevCount){
+                return prevCount-1
+            })
+        */
+        setCount(prevCount=> prevCount-1)
     }
     function inc(){
         setCount(count+1)
