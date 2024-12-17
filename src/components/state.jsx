@@ -1,5 +1,5 @@
 import React from "react"
-import './index1.css'
+import './state.css'
 export default function App() {
     let [isImportant, setIsImportant] = React.useState("Yes")
     
@@ -8,7 +8,7 @@ export default function App() {
     }
     
     return (
-        <main>
+        <main className="state-main">
             <h1 className="title">Is state important to know?</h1>
             <button onClick={handleClick} className="value">{isImportant}</button>
         </main>

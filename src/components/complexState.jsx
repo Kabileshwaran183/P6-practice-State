@@ -17,7 +17,7 @@ export default function App() {
     }
 
     return (
-        <main>
+        <main className="App3-main">
             <button onClick={addFavoriteThing}>Add item</button>
             <section aria-live="polite">
                 {thingsElements}

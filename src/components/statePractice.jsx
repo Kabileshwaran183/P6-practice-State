@@ -1,5 +1,5 @@
 import React from "react"
-import './state.css'
+import './statePractice.css'
 export default function App() {
     let[count,setCount] = React.useState(0)
     function dec(){
@@ -32,7 +32,7 @@ export default function App() {
     }
 
     return (
-        <main className="container">
+        <main className="state-practice-main">
             <h1>State Practice</h1>
             <div className="counter">
                 <button onClick={dec} className="minus" aria-label="Decrease count">–</button>
@@ -41,7 +41,7 @@ export default function App() {
                 {/* this is try code */}
                 </div>
             <button onClick={reset} className="reset">reset</button>
-        <br /><br /><br />
+        <br />
             <h1 className="title">Do I feel like going out tonight?</h1>
             <button
                 onClick={changeMind}

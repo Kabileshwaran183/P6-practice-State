@@ -1,28 +1,11 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #262626;
-    color: #D9D9D9;
-    padding: 20px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
+.state-main{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-
-main > .title {
+.state-main > .title {
     text-align: center;
 }
+/* 
 
 main > .value {
     background-color: white;
@@ -37,4 +20,4 @@ main > .value {
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-}
+} */

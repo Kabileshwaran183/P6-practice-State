@@ -23,7 +23,7 @@ export default function App() {
     }
 
     return (
-        <main>
+        <main className="App4-main">
             <article className="card">
                 <img
                     src={avatar}
