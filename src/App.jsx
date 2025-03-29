@@ -10,16 +10,16 @@ export default function App() {
     return (
         <main>
             <div className="first">
-        <App1 />
-        <App4 />
-        </div>
-        <div className="second">
-        <App2 />
-        </div>
-        <div className="third">
-        <App3 />
-        </div>
+                <App1 />
+                <App4 />
+            </div>
+            <div className="second">
+                <App2 />
+            </div>
+            <div className="third">
+                <App3 />
+            </div>
         </main>
-        
+
     )
 }
